@@ -1,3 +1,90 @@
 body{
-    background-image: ;
+    background-image: url('/img/nakgrund.jpg');
+}
+*{margin: 0px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#banner{
+    width: 100%;
+}
+#grid_wrapper{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "he"
+    "na"
+    "er"
+    "di"
+    "fo"
+    ;
+    /* justify-content: space-around; */
+    row-gap: 5px;
+}
+#main_header{
+    grid-area: he;
+}
+header{
+    height: auto;
+    width: 100%;
+     display: block;
+}
+#main_nav{
+    grid-area: na;
+}
+nav{
+    display: block;
+    height: 50px;
+    background-color: lightblue;
+}
+#erbjudanden{
+    grid-area: er;
+    display: block;
+    height: 500px ;
+    width: 1222px;
+background-color: lightcyan;
+margin: 5px;
+justify-self: center;
+}
+#med-inf{
+    display: grid;
+    grid-area: di;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "med inf"
+    ;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+#medlem{
+    grid-area: med;
+    
+}
+#info2{
+ grid-area: inf;
+}
+.box{
+    display: block;
+    width: 660px;
+    height: 300px;
+    background-color: khaki;
+}
+footer{
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: 350px;
+    width: 100%;
+}
+#main_footer{
+    grid-area: fo;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
