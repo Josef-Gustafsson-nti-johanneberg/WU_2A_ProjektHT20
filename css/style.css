@@ -91,10 +91,44 @@ justify-self: center;
 footer{
     background-color: lightgrey;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
     height: 350px;
     width: 100%;
+}
+#footer_left{
+    height: 100%;
+}
+#footer_right{
+    display: grid;
+    height: 350px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fa in"
+    "tw sn"
+    "nc nc"
+    ;
+}
+#facebook{
+    display: block;
+    grid-area: fa;
+}
+#instagram{
+    display: block;
+    grid-area: in;
+}
+#twitter{
+    display: block;
+    grid-area: tw;
+}
+#snapchat{
+    display: grid;
+    grid-area: sn;
+}
+.sociala_medier{
+    height: 100%;
 }
 #main_footer{
     grid-area: fo;
@@ -143,15 +177,3 @@ img.animation{
 
 .img-container { position: relative; }
 
-/* .img-container .top {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-} */
-/* .img-container .bott {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  } */
