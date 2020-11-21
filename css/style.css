@@ -160,7 +160,7 @@ img.animation{
 }
 
 #erbjudande_2{
-    animation-duration: 20s; animation-delay: 0s; animation-timing-function: step-start ; animation-timing-function: step-end;
+    animation-duration: 30s; animation-delay: 10s; animation-timing-function: step-start ; animation-timing-function: step-end;
     position: relative;
     top: 0;
     left: 0;
@@ -168,12 +168,19 @@ img.animation{
 }
 
 #erbjudande_1{
-    animation-duration: 20s; animation-delay: 10s; animation-timing-function: step-start ; animation-timing-function: step-end;
+    animation-duration: 30s; animation-delay: 20s; animation-timing-function: step-start ; animation-timing-function: step-end;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
 } 
+#erbjudande_3{
+    animation-duration: 30s; animation-delay: 0s; animation-timing-function: step-start ; animation-timing-function: step-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
 .img-container { position: relative; }
 
