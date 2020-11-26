@@ -133,7 +133,8 @@ footer{
 #main_footer{
     grid-area: fo;
 }
-ul{
+#main_meny{
+    list-style: none;
     align-self: center;
     display: flex;
     justify-content: space-around;
