@@ -35,11 +35,11 @@ header{
     grid-area: na;
 }
 #aside_left{
-    width: 50px;
+    width: 100%;
     display: block;
     grid-area: as1;
 }
-#asdie_right{
+#aside_right{
     display: block;
     grid-area: as2;
     background-color: khaki;
@@ -184,4 +184,6 @@ img.animation{
 }
 
 .img-container { position: relative; }
+
+/* meny */
 
