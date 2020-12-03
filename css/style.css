@@ -4,11 +4,23 @@ body{
 *{margin: 0px;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0px;
 }
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 #banner{
     width: 100%;
 }
-#grid_wrapper{
+#grid_wrapper_main{
     width: 100vw;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
@@ -139,6 +151,10 @@ footer{
     display: flex;
     justify-content: space-around;
     align-content: center;
+    height: 100%;
+}
+#main_meny li{
+    align-self: center;
 }
 
 @keyframes img_animation {
@@ -186,4 +202,33 @@ img.animation{
 .img-container { position: relative; }
 
 /* meny */
-
+#grid_wrapper_meny{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 15% auto 15%;
+    grid-template-areas: 
+    "he he he"
+    "na na na"
+    "as1 me as2"
+    "as1 me as2"
+    "fo fo fo"
+    ;
+    /* justify-content: space-around; */
+    row-gap: 10px;
+}
+#meny_section{
+    background-color:darkgray;
+    grid-area: me ;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.disches{
+    background-color: lightgray;
+    margin: 5px;
+}
+.disches h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
