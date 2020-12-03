@@ -1,11 +1,9 @@
 body{
-    background-image: url('/img/nakgrund.jpg');
-}
+    background-image: url('/img/nakgrund.jpg');}
 *{margin: 0px;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 0px;
-}
+    padding: 0px;}
 a:link {
     text-decoration: none;
     color: black;
@@ -16,6 +14,7 @@ a:link {
   }
   a:hover {
     text-decoration: underline;
+    color: lightsalmon;
   }
 #banner{
     width: 100%;
@@ -24,7 +23,7 @@ a:link {
     width: 100vw;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 15% auto 15%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-areas: 
     "he he he"
     "na na na"
@@ -70,7 +69,7 @@ nav{
     grid-area: er;
     display: block;
     height: 500px ;
-    width: 1222px;
+    width: auto;
 background-color: lightcyan;
 margin: 5px;
 justify-self: center;
@@ -87,9 +86,16 @@ justify-self: center;
     align-items: center;
     column-gap: 10px;
 }
+.medlem_bild{
+    height: 100%;
+    width: auto;
+}
+
 #medlem{
     grid-area: med;
-    
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 62% 35%;
 }
 #info2{
  grid-area: inf;
@@ -98,7 +104,7 @@ justify-self: center;
     display: block;
     width: 660px;
     height: 300px;
-    background-color: khaki;
+    background-color: lightblue;
 }
 footer{
     background-color: lightgrey;
@@ -110,6 +116,10 @@ footer{
 }
 #footer_left{
     height: 100%;
+}
+#footer_left p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #footer_right{
     display: grid;
