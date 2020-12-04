@@ -33,6 +33,7 @@ a:link {
     ;
     /* justify-content: space-around; */
     row-gap: 10px;
+
 }
 #main_header{
     grid-area: he;
@@ -68,7 +69,7 @@ nav{
 #erbjudanden{
     grid-area: er;
     display: block;
-    height: 500px ;
+    height: 90% ;
     width: auto;
 background-color: lightcyan;
 margin: 5px;
@@ -95,14 +96,14 @@ justify-self: center;
     grid-area: med;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 62% 35%;
+    grid-template-columns: 69% 35%;
 }
 #info2{
  grid-area: inf;
 }
 .box{
     display: block;
-    width: 660px;
+    width: 600px;
     height: 300px;
     background-color: lightblue;
 }
@@ -184,6 +185,10 @@ footer{
 }
 img.animation{
     animation: img_animation ease infinite ;
+}
+.animation{
+    height: 100%;
+    width: 100%;
 }
 
 #erbjudande_2{
