@@ -116,9 +116,9 @@ header{
 footer{
     background-color: #d3d3d3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto ;
-    height: 350px;
+    height: auto;
     width: 100%;
 }
 #footer_left{
@@ -130,14 +130,13 @@ footer{
 }
 #footer_right{
     display: grid;
-    height: 350px;
+    height: 100%;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "fa in"
     "tw sn"
-    "nc nc"
     ;
 }
 #facebook{
@@ -158,6 +157,7 @@ footer{
 }
 .sociala_medier{
     height: 100%;
+    width: 100%;
 }
 #main_footer{
     grid-area: fo;
@@ -212,20 +212,16 @@ img.animation{
 #grid_wrapper_meny{
     width: 99vw;
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 15% auto 15%;
     grid-template-areas: 
     "he he he"
     "na na na"
-    "as1 ru as2"
     "as1 me as2"
     "as1 me as2"
     "fo fo fo"
     ;
-    /* justify-content: space-around; */
     row-gap: 10px;
-    margin-left: center;
-    margin-right: center;
 }
 #rubrik{
     grid-area: ru;
@@ -233,7 +229,6 @@ img.animation{
     opacity: 80%;
     justify-content: center;
     display: flex;
-    margin: -5;
     margin-bottom: -10px;
 }
 #rubrik h1{
@@ -249,6 +244,8 @@ img.animation{
     height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "ru ru";
 }
 .disches{
     background-color: #d3d3d3;
@@ -276,21 +273,18 @@ img.animation{
     /* justify-content: space-around; */
     row-gap: 10px;
     column-gap: 20px;
-    margin-left: center;
-    margin-right: center;
 }
 #om_oss_hitta_hit{
     grid-area: se;
     display: grid;
     grid-template-areas: 
+    "ru ru"
     "bi ka"
     "text_l text_r"
     ;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     row-gap: 10px;
-
-
 }
 #om_oss_hitta_hit img{
     width:100% ;
@@ -303,12 +297,10 @@ img.animation{
 #om_oss_om_oss p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight: 1000;
 }
 #hitta_till_oss p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight: 1000;
 }
 #om_oss_om_oss{
     grid-area: text_l;
